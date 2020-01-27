@@ -1,0 +1,376 @@
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+img {
+  padding: 0;
+  display: block;
+  margin: 0 auto;
+  max-height: 100%;
+  max-width: 100%;
+  z-index: 2;
+}
+
+
+/* --------- Index.html style ---------*/
+
+.header {
+  font-family: 'Poppins', sans-serif;
+}
+
+.menu{
+  position: relative;
+  left:90%;
+  top:15px;
+  border: none;
+  font-family: 'Playfair Display', sans-serif;
+  background-color: rgb(246,250,253);
+}
+
+.card {
+  margin-top: -80px;
+  height: 100%;
+  border: none;
+}
+
+.card-body {
+  width: 100%;
+  height: 15vw;
+  object-fit: cover;
+}
+.greet {
+  font-family: 'Playfair Display', sans-serif;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.person-name {
+  font-family: 'Playfair Display', sans-serif;
+  text-transform: uppercase;
+  font-size: 55px;
+  margin-bottom: -15px;
+  margin-top: -10px;
+}
+.card-text {
+  font-family:'Poppins', sans-serif;
+  font-size: 17px;
+  color: #828282;
+}
+.btn.btn-primary {
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  margin-top: -10px;
+  width: 120px;
+  height: 35px;
+  background-image: linear-gradient(to right, #038bdf, #45bdfa);
+  border: none;
+  text-transform: uppercase;
+}
+/* --------- menu slider style ---------*/
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  right: 0;
+  top: 0;
+  background-color: rgb(255, 255, 255);
+  overflow-x: hidden;
+  transition: 0.5s;
+
+}
+
+.overlay-content {
+  position: relative;
+  top: 8%;
+  width: 100%;
+  text-align: left;
+  left: 15px;
+  margin-top: 30px;
+
+}
+
+.overlay a {
+  padding: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  color: #383838;
+  display: block;
+  transition: 0.3s;
+}
+
+#myNav div a.active-page {
+  color: #2a7aff;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #2a7aff;
+
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  font-size: 38px;
+
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px
+  }
+  .overlay .closebtn {
+    font-size: 35px;
+    top: 4px;
+    left: 10px;
+  }
+}
+.getintouch{
+  text-align: left;
+  position: absolute;
+  left:20px;
+  top: 80%;
+}
+
+.overlay-touch {
+  font-size: 25px;
+  font-family: 'Playfair Display', sans-serif;
+  text-transform: uppercase;
+}
+
+.media-button {
+  display: inline-flex;
+  position: absolute;
+  top: 90%;
+  left: 15px;
+}
+.med-btn{
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+  border-radius: 10%;
+  background:#f1f1f1;
+  color: #3498db;
+  overflow: hidden;
+  position: relative;
+}
+
+.med-btn i {
+  margin: 0 auto;
+  padding: 0;
+  vertical-align: center;
+  display: table-cell;
+  }
+
+/* ------ Services ------- */
+
+.home-back {
+  margin-left: 90%;
+  margin-top: 5%;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+}
+
+.offer-text {
+  font-size: 60px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Playfair Display', sans-serif;
+}
+
+.card-deck {
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.scard {
+  margin-left: 4%;
+  width: 20%;
+  height: 40%;
+  border: 2px solid #f3f3f3;
+  opacity: 0.8;
+
+}
+
+.simage {
+  margin-top: 5%;
+  margin-left: 5%;
+}
+
+.card-stitle{
+  font-size: 17px;
+  font-weight: bold;
+  margin-left: 8%;
+  margin-top: 5%;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+}
+
+.card-stext {
+  font-family:'Poppins', sans-serif;
+  font-size: 17px;
+  color: #828282;
+  margin-left: 8%;
+}
+
+.scard:hover{
+  opacity: 1.0;
+  border: 1px solid snow;
+  box-shadow: 5px 5px 5px 5px #f6fafd;
+}
+
+
+/* --------- Contact style ---------*/
+
+.form-control {
+  border-top: 1px;
+  border-right: 1px;
+  border-left: 1px;
+}
+.select{
+  width: 45px;
+  height: 25px;
+  border-radius: 5%;
+  border-color: #3498db;
+}
+
+.contact {
+  font-weight: 100;
+  font-size: 50px;
+  font-family: 'Playfair Display', sans-serif;
+  text-align: center;
+}
+
+.call-text {
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.num-text{
+  font-family: 'Poppins', sans-serif;
+  color: #7f7f7f
+}
+
+.email-text{
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.email-add{
+  font-family: 'Poppins', sans-serif;
+  color: #7f7f7f;
+}
+.adr-text{
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.adress-add{
+  font-family: 'Poppins', sans-serif;
+  color: #7f7f7f;
+}
+.send-button {
+   font-size: 10px;
+   color: white;
+   font-family: 'Poppins', sans-serif;
+   text-transform: uppercase;
+   width: 100px;
+   height: 30px;
+   background-image: linear-gradient(to right, #038bdf, #45bdfa);
+   border: none;
+   border-radius: 5%;
+ }
+
+.radio input[type='radio'] {
+  display: none;
+}
+
+.radio label:before {
+  content: " ";
+  display: inline-block;
+  position: relative;
+  top: 5px;
+  margin: 0 5px 0 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 11px;
+  border: 2px solid #45bdfa;
+  background-color: transparent;
+}
+.gender-text{
+  font-family: 'Playfair Display', sans-serif;
+  font-size: 12px;
+}
+
+.radio label {
+  position: relative;
+}
+
+.radio label input[type='radio']:checked+span {
+  border-radius: 8px;
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  top: 10px;
+  left: 6px;
+  display: block;
+  background-color: #45bdfa;
+}
+
+ label {
+  font-family: 'Playfair Display', sans-serif;
+   font-size: 12px;
+}
+
+ input[type=checkbox]:hover {
+  box-shadow:0 0 10px #45bdfa;
+}
+
+/* --------- About style ---------*/
+
+.lead {
+  font-size: 16px;
+  color: #828282;
+  font-family: 'Poppins', sans-serif;
+  z-index: 1;
+
+}
+.per-det {
+  padding: 20px;
+  font-family: 'Playfair Display', sans-serif;
+  font-size: 60px;
+  text-transform: uppercase;
+  z-index: 1;
+}
+
+/*
+#background p {
+  position: relative;
+  text-align: center;
+  font-size: 50px;
+  top: 50px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  overflow: hidden;
+}
+*/
